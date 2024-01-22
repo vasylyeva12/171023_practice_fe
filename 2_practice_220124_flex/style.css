@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.boxesContainer {
+    min-height: 400px;
+    /* position: relative; */
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.box1 {
+    background-color: red; 
+    position: relative;   
+}
+.box1 p{
+    display:none;
+}
+.box1:hover p{
+    display:block;
+}
+
+.box2 {
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    
+    
+    /* bottom: 50px ;
+    left: 50px; */
+}
+
+.box3 {
+    background-color: lightgreen;
+    /* position: absolute; */
+    /* top: 80%; */
+    /* position: relative; */
+}
+    /* .leftBlock{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .rightBlock{
+        position: absolute;
+        top: 20px;
+        right: 20px; 
+    } */
+
+.redBox {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
