@@ -19,22 +19,28 @@
     background-color: red; 
     position: relative;   
 }
-.box1 p{
-    display:none;
+.box1 p {
+    display: none;
 }
-.box1:hover p{
-    display:block;
+
+.box1:hover p {
+    display: block;
 }
 
 .box2 {
-    background-color: yellow;
-    position: absolute;
-    top: 0;
-    
-    
-    /* bottom: 50px ;
-    left: 50px; */
+    background-color: yellow; 
 }
+.box2 > div p {
+    display: none;
+    background-color: #2c0d9a;
+    color: aliceblue;
+}
+
+.box2:hover > div p {
+    display: block;
+}
+    
+
 
 .box3 {
     background-color: lightgreen;
