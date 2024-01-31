@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    --background: #84C7AE;
+    --formbackground:#F6FBF9;
+    --heading: #212B27;
+    --paragraph:#32403B;    
+    --box:#C1E3D6;
+   
+     
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+.form__container{
+    background-color: var(--background);
+    max-width: 1600px;
+    height: 1400px;
+    margin: 50px auto;
+    position: relative;     
+    overflow: hidden;
+    padding: 516px 512px 824px 808px;
+}
+
+.box{
+    max-width: 320px;
+    height: 320px;
+    background-color: var(--box);
+}
+.box__up{
+    position: absolute;
+    top: -124px;
+    left: -135px;
+    border-radius: 40px;
+    transform: rotate(-45deg);
+    opacity: 0.6;      
+    
+}
+
+.box__down{
+    position: absolute;
+    top: 387px;
+    left: 597px;
+    border-radius: 40px;
+    transform: rotate(-45deg);
+    opacity: 0.6;
+
+}
+
+form{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translate(40%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--formbackground);
+    max-width: 455px;   
+    padding: 44px 40px;
+
+}
+
+form  h2{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    margin: 0 30px;
+}
+
+.cteate__title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    margin: 4px 34px 32px 34px;
+ 
+}
+input{
+    padding: 18px 22px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.50);
+    border: 1px solid #e5e5e5;
+    border-radius:10px;
+
+}
+.input-flex__container{
+    display: flex;
+    justify-content: space-around;
+}
+.email{
+    margin-bottom: 15px ;
+}
+
+button{
+    background-color: var(--background);
+    color: white;
+    padding: 15px 48px;
+    border-radius: 15px;
+    margin: 11px 60px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+.link{
+    color: var(--paragraph);
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+a{
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #000000;
+}
