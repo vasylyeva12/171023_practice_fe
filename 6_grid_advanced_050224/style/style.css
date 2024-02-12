@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.info-line {
+  text-transform: uppercase;
+  padding: 8px auto;
+  text-align: center;
+  background-color: #FAFAF5;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.burger-menu__container{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.burger-menu__item{
+  opacity: 0;
+  z-index: 10;
+  /* display: none; */
+}
+
+.burgerMenuContainer span {
+	width: 26px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+.burger-menu__container span:nth-of-type(2) {
+	top: calc(50% - 7px);
+}
+.burger-menu__container span:nth-of-type(3) {
+	top: calc(50% + 7px);
+}
+
+.burger-menu__item:checked ~ #item0 {
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg);
+}
+.burger-menu__item:checked ~ #item1 {
+  display: none;
+}
+.burger-menu__item:checked ~ #item2 {
+  top: 50%;
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+nav {
+  background-color: #977357;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+nav ul:nth-child(1) {
+  padding-left: 161px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 18px;
+}
+
+li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background-color: #a05b4e;
+  padding: 13px 21px ;
+}
+header {
+  background-color: #977357;
+   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1{
+   font-size: 54px; 
+}
+button {
+    background-color: #a05b4e;
+    color: #fff;
+    padding: 13px 21px;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  section > p{
+    text-transform: uppercase;    
+    padding: 51px 30px;
+    font-size: 44px;
+  }
+  .flex-container{
+    display: flex;
+   
+    padding: 63px 30px;
+  }
+  .imet{
+    flex-basis: 50%;
+    margin-right: 30px;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    flex-basis: 50%;
+  }
+
+  .grid-container > p{
+    margin: 8px 0 31px 0;
+    font-size: 16px;
+  }
+
+  .flex-container  p > span{
+    padding-left: 85px;
+  }
+
+  .advantages__block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .advantages__content{
+    
+  }
+
+ @media (max-width: 700px) {
+  nav ul {   
+    flex-direction: column;    
+    gap: 10px;
+  }  
+
+   /* Работаем с блоком с картинками. Для экранов максимум 700 пикселей, нужно разместить наши левую и правую части блока в столбец. То есть, сначала идет большая картинка, а под ней - сетка с двумя колонками маленьких картинок. */
+  .flex-container{
+    flex-direction: column;
+  }
+  
+ }
+
+
+
+ /* Для экранов максимум 520 пикселей, нужно сетку из двух колонок с маленькими картинками также показывать в один столбец. */
+
+ @media screen  and (max-width: 500px){
+  .grid-container{
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(8, 1fr); */
+  }
+ }
+
+ /* Реализуем заготовку для бургер-меню. В файле index.html, раскомментируем блок div.burgerMenuContainer. Это кнопка бургер меню. На экранах шириной больше 520 пикселей, кнопка должна быть скрыта. На меньших экранах, эту кнопку нужно показывать, а блок навигации прятать. */
+
+ @media screen and (max-width: 520px) {
+  .burger-menu__container{
+    display: flex;
+  }
+  nav{
+    display: none;
+  }
+  
+ }

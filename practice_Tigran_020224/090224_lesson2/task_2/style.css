@@ -1,0 +1,36 @@
+/* Задать grid сетку для карточек согласно макету
+Сетка должна занимать всю ширину экрана, а содержимое ячейки сетки должно находится по центру. Сама карточка должна занимать 250x200px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.users__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  justify-content: center;
+  align-items:center;
+  justify-items: center;
+  /* align-content: center; */
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  width: 250px;
+  height: 200px;
+  background-color: #ecf681;
+  border-radius: 15px;
+}
